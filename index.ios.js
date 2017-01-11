@@ -73,17 +73,11 @@ export default class checkbox extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View>
-          <Button
-            onPress={() => {this.refs.select.openModal();}}
-            title="Choose More"
-          />
-        </View>
-        {/* normal LabelSelect */}
+        <Text style={styles.text}>Normal LabelSelect</Text>
         <LabelSelect
           title="Checkbox"
           ref="select"
-          style={{marginTop: 20}}
+          style={styles.labelSelect}
           onConfirm={this.selectConfirm}
         >
           {this.state.arr.filter(item => item.isSelected).map((item, index) =>
@@ -100,9 +94,9 @@ export default class checkbox extends Component {
             >{item.name}</LabelSelect.ModalItem>
           )}
         </LabelSelect>
-        {/* read only LabelSelect */}
+        <Text style={styles.text}>ReadOnly LabelSelect</Text>
         <LabelSelect
-          style={{marginTop: 20}}
+          style={styles.labelSelect}
           title="Checkbox"
           readOnly={true}
           onConfirm={this.selectConfirm}
@@ -115,9 +109,9 @@ export default class checkbox extends Component {
             >{item.name}</LabelSelect.Label>
           )}
         </LabelSelect>
-        {/* disabled LabelSelect */}
+        <Text style={styles.text}>Disabled LabelSelect</Text>
         <LabelSelect
-          style={{marginTop: 20}}
+          style={styles.labelSelect}
           title="Checkbox"
           enable={false}
           onConfirm={this.selectConfirm}
@@ -138,19 +132,23 @@ export default class checkbox extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 10,
     justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#FCFCFF'
+    alignItems: 'flex-start',
+    backgroundColor: '#e3eeee'
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10
+  labelSelect: {
+    marginTop: 5,
+    marginBottom: 20,
+    padding: 5,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderStyle: 'dashed',
+    borderColor: '#6dc2a2'
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
+  text: {
+    fontSize: 16,
+    color: 'rgb(13, 131, 144)'
   }
 });
 

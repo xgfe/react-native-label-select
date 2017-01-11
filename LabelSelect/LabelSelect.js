@@ -21,7 +21,7 @@ class LabelSelect extends Component {
     readOnly: PropTypes.bool,
     enable: PropTypes.bool,
     onConfirm: PropTypes.func,
-    enableAddIcon: PropTypes.bool
+    enableAddBtn: PropTypes.bool
   }
   static defaultProps = {
     style: {},
@@ -29,7 +29,7 @@ class LabelSelect extends Component {
     enable: true,
     readOnly: false,
     onConfirm: () => {},
-    enableAddIcon: true
+    enableAddBtn: true
   }
   constructor(props) {
     super(props);
@@ -68,7 +68,7 @@ class LabelSelect extends Component {
     else {this.selectedList.push(time);}
   }
   render() {
-    const {readOnly, enable, title, style, enableAddIcon} = this.props;
+    const {readOnly, enable, title, style, enableAddBtn} = this.props;
     let selectedLabels = React.Children.toArray(this.props.children)
       .filter(item => item.type === Label)
       .map((child, index) => {
@@ -89,7 +89,7 @@ class LabelSelect extends Component {
     return (
       <View style={[Styles.selectedView, style]}>
         {selectedLabels}
-        {enable && !readOnly && enableAddIcon &&
+        {enable && !readOnly && enableAddBtn &&
           <TouchableHighlight
             style={[Styles.selectedItem, Styles.addItem]}
             underlayColor="transparent"
