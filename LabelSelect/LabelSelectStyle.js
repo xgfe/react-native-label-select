@@ -12,31 +12,28 @@ export const Color = {
 };
 
 export default StyleSheet.create({
-  selectedItem: {
-    margin: 4,
-    borderWidth: 2 / scale,
-    borderRadius: 4,
-    borderColor: '#aaa',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fefefe'
-  },
-  selectedContainer: {
-    padding: 4,
-    borderWidth: 2 / scale,
-    borderRadius: 4,
-    borderColor: '#c8c8c8',
-    backgroundColor: '#fcfcfc'
-  },
-  disableColor: {
-    backgroundColor: Color.disableColor
-  },
   selectedView: {
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'center',
     flexWrap: 'wrap'
+  },
+  selectedItem: {
+    margin: 4,
+    borderWidth: 2 / scale,
+    borderRadius: 6,
+    borderColor: '#aaa',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    overflow: 'hidden',
+    backgroundColor: '#f6f6f6'
+  },
+  addItem: {
+    padding: 7
+  },
+  disableColor: {
+    backgroundColor: Color.disableColor
   },
   labelText: {
     padding: 6,
@@ -51,6 +48,10 @@ export default StyleSheet.create({
   closeIcon: {
     width: 10,
     height: 10
+  },
+  addIcon: {
+    width: 12,
+    height: 12
   },
   modalMask: {
     flex: 1,
@@ -87,25 +88,28 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around'
   },
-  modalItem: {
-    height: 50,
-    paddingHorizontal: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    borderTopWidth: 0.5,
-    borderTopColor: '#bbb'
-  },
-  buttonText: {
-    color: '#fff',
-    fontSize: 16
-  },
   modalButton: {
     width: width * 0.3,
     paddingLeft: 20,
     paddingRight: 20,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  modalItem: {
+    height: 50,
+    paddingHorizontal: 20,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    borderBottomWidth: 2 / scale,
+    borderBottomColor: '#bbb'
+  },
+  modalText: {
+    fontSize: 16
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16
   },
   confirmButton: {
     borderLeftWidth: 0.5,
@@ -117,6 +121,7 @@ export default StyleSheet.create({
     width: 20,
     height: 20,
     borderRadius: 10,
+    overflow: 'hidden',
     justifyContent: 'center',
     alignItems: 'center'
   },
@@ -127,6 +132,10 @@ export default StyleSheet.create({
     backgroundColor: Color.main,
     width: 16,
     height: 16,
-    borderRadius: 8
+    borderRadius: 8,
+    overflow: 'hidden'
+  },
+  disableText: {
+    color: '#999'
   }
 });
