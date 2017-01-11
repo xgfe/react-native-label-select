@@ -16,7 +16,6 @@ import Styles from './LabelSelectStyle';
 class LabelSelect extends Component {
   addIcon = require('./img/add.png')
   static propTypes = {
-    style: PropTypes.object,
     title: PropTypes.string,
     readOnly: PropTypes.bool,
     enable: PropTypes.bool,
