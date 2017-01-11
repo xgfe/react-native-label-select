@@ -1,7 +1,5 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * Created by TinySymphony on 2017-01-03.
  */
 
 export {default} from './index.ios.js';
