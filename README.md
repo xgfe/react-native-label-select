@@ -2,9 +2,9 @@
 LabelSelect is a component used for making multiple choices. The modal is an checkbox like html.
 
 ## Example
-<a href="#"><img src="./GIF/android.gif" width="240"/></a>
+<a href="#android" id="android"><img src="./GIF/android.gif" align="left" width="240"/></a>
 
-<a href="#"><img src="./GIF/ios.gif" width="240"/></a>
+<a href="#ios" id="ios"><img src="./GIF/ios.gif" width="240"/></a>
 
 
 ## usage
