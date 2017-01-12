@@ -15,8 +15,11 @@
 		"babel-jest": "18.0.0",
 		"babel-preset-react-native": "1.9.1",
 		"coveralls": "^2.11.15",
+		"enzyme": "^2.7.0",
 		"istanbul": "^0.4.5",
 		"jest": "18.1.0",
+		"react-addons-test-utils": "^15.4.2",
+		"react-dom": "^15.4.2",
 		"react-test-renderer": "~15.4.0-rc.4"
 	},
 	"jest": {

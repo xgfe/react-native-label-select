@@ -1,4 +1,4 @@
-## react-native-labelSelect [![Build Status](https://travis-ci.org/Tinysymphony/react-native-labelSelect.svg?branch=master)](https://travis-ci.org/Tinysymphony/react-native-labelSelect) [![Coverage Status](https://coveralls.io/repos/github/Tinysymphony/react-native-labelSelect/badge.svg?branch=master)](https://coveralls.io/github/Tinysymphony/react-native-labelSelect?branch=master)
+## react-native-label-select [![Build Status](https://travis-ci.org/Tinysymphony/react-native-labelSelect.svg?branch=master)](https://travis-ci.org/Tinysymphony/react-native-labelSelect) [![Coverage Status](https://coveralls.io/repos/github/Tinysymphony/react-native-labelSelect/badge.svg?branch=master)](https://coveralls.io/github/Tinysymphony/react-native-labelSelect?branch=master)
 LabelSelect is a component used for making multiple choices. The modal is an checkbox like html.
 
 ## Example
@@ -23,7 +23,7 @@ const {Label, ModalItem} = LabelSelect
   enableAddBtn={true}
   style={yourStyle}
   onConfirm={(list) => {...}}>
-  
+
   <Label
     key={...}
     data={itemA}
@@ -69,3 +69,21 @@ const {Label, ModalItem} = LabelSelect
 | data | - | any | Data that bind to the ModalItem. After confirming the items selected on modal, the data will be passed to the selected list. |
 
 
+## Instance Methods
+
+
+| Method | Params | Description |
+| --- | --- | --- |
+| openModal | - | Open select modal |
+| cancelSelect | - | Close select modal. Also triggered when the cancel button of modal being pressed. |
+
+Use `ref` property as a hook to invoke internal methods.
+
+```html
+<LabelSelect ref="select">...</LableSelect>
+```
+
+```js
+this.ref.select.openModal()
+this.ref.select.cancelSelect()
+```

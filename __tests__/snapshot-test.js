@@ -1,5 +1,6 @@
 import 'react-native';
 import React from 'react';
+import {shallow} from 'enzyme';
 import renderer from 'react-test-renderer';
 
 import LabelSelect from '../LabelSelect';
@@ -24,6 +25,8 @@ let otherItems = mock.list.map((item, index) =>
     {item.text}
   </ModalItem>
 );
+
+// snapshot test
 
 it('renders enabled LabelSelect', () => {
   let tree = renderer.create(
@@ -71,4 +74,46 @@ it('renders a modal item', () => {
   expect(renderer.create(
     <ModalItem data={item}>{item.text}</ModalItem>
   )).toMatchSnapshot();
+});
+
+// shallow test
+
+it('interact with modal', () => {
+  let arr = [];
+  const item = mock.list[0];
+  const tree = shallow(
+    <LabelSelect
+      title="Test1"
+      onConfirm={(list) => {arr = list;}}
+      >
+      {selectedItems}
+      {otherItems}
+    </LabelSelect>
+  );
+  let select = tree.instance();
+  select.openModal();
+  expect(tree.state('isModalVisible')).toEqual(true);
+  select.toggleSelect(item);
+  select.confirmSelect();
+  expect(arr[0]).toEqual(item);
+  expect(tree.state('isModalVisible')).toEqual(false);
+  select.openModal();
+  select.cancelSelect();
+  expect(tree.state('isModalVisible')).toEqual(false);
+});
+
+it('selecte a item', () => {
+  let data = mock.list[0];
+  let result;
+  const tree = shallow(
+    <ModalItem
+      data={data}
+      toggleSelect={(item) => {result = item;}}
+      >
+      {data.text}
+    </ModalItem>
+  );
+  let instance = tree.instance();
+  instance._toggleSelect();
+  expect(result).toEqual(data);
 });
