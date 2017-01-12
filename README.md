@@ -1,4 +1,4 @@
-## react-native-labelSelect
+## react-native-labelSelect [![Build Status](https://travis-ci.org/Tinysymphony/react-native-labelSelect.svg?branch=master)](https://travis-ci.org/Tinysymphony/react-native-labelSelect)
 LabelSelect is a component used for making multiple choices. The modal is an checkbox like html.
 
 ## Example

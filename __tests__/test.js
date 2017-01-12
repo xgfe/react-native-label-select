@@ -1,12 +1,12 @@
 import 'react-native';
 import React from 'react';
-import LabelSelect from '../LabelSelect/LabelSelect';
-
-const {Label, ModalItem} = LabelSelect;
-// Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
+import LabelSelect from '../LabelSelect';
+
 import mock from './__mock__/mock';
+
+const {Label, ModalItem} = LabelSelect;
 
 let selectedItems = mock.selectedList.map((item, index) =>
   <Label

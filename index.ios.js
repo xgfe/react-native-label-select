@@ -10,7 +10,7 @@ import {
   StyleSheet,
   AppRegistry
 } from 'react-native';
-import LabelSelect from './LabelSelect/LabelSelect';
+import LabelSelect from './LabelSelect';
 
 export default class checkbox extends Component {
   constructor(props) {
