@@ -1,4 +1,4 @@
-## react-native-label-select [![Build Status](https://travis-ci.org/Tinysymphony/react-native-labelSelect.svg?branch=master)](https://travis-ci.org/Tinysymphony/react-native-labelSelect) [![Coverage Status](https://coveralls.io/repos/github/Tinysymphony/react-native-labelSelect/badge.svg?branch=master)](https://coveralls.io/github/Tinysymphony/react-native-labelSelect?branch=master)
+## react-native-label-select [![Build Status](https://travis-ci.org/Tinysymphony/react-native-label-select.svg?branch=master)](https://travis-ci.org/Tinysymphony/react-native-label-select) [![Coverage Status](https://coveralls.io/repos/github/Tinysymphony/react-native-label-select/badge.svg?branch=master)](https://coveralls.io/github/Tinysymphony/react-native-label-select?branch=master)
 LabelSelect is a component used for making multiple choices. The modal is an checkbox like html.
 
 ## Example
@@ -87,3 +87,5 @@ Use `ref` property as a hook to invoke internal methods.
 this.ref.select.openModal()
 this.ref.select.cancelSelect()
 ```
+
+

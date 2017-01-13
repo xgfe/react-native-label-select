@@ -76,21 +76,23 @@ it('renders a modal item', () => {
   )).toMatchSnapshot();
 });
 
-// shallow test
+// enzyme test
 
 it('interact with modal', () => {
   let arr = [];
   const item = mock.list[0];
   const tree = shallow(
     <LabelSelect
-      title="Test1"
+      title="Enzyme Test"
       onConfirm={(list) => {arr = list;}}
+      enableAddBtn={false}
       >
       {selectedItems}
       {otherItems}
     </LabelSelect>
   );
   let select = tree.instance();
+  expect(tree.find('TouchableHighlight').length).toEqual(4);
   select.openModal();
   expect(tree.state('isModalVisible')).toEqual(true);
   select.toggleSelect(item);
