@@ -11,10 +11,12 @@ import {
   ScrollView,
   TouchableHighlight
 } from 'react-native';
-import Styles from './LabelSelectStyle';
+import Styles, {IMG} from './LabelSelectStyle';
 
 class LabelSelect extends Component {
-  addIcon = require('./img/add.png')
+  addIcon = {
+    uri: IMG.addIcon
+  }
   static propTypes = {
     title: PropTypes.string,
     readOnly: PropTypes.bool,
@@ -146,7 +148,9 @@ class LabelSelect extends Component {
 }
 
 class Label extends Component {
-  closeIcon = require('./img/close.png')
+  closeIcon = {
+    uri: IMG.closeIcon
+  }
   static propTypes = {
     onCancel: PropTypes.func,
     readOnly: PropTypes.bool,

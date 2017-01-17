@@ -2,16 +2,18 @@
 LabelSelect is a component used for making multiple choices. The modal is an checkbox like html.
 
 ## Example
-<a href="#android" id="android"><img src="./GIF/android.gif" align="left" width="240"/></a>
+<a href="#android" id="android"><img src="http://7xjgb0.com1.z0.glb.clouddn.com/android.gif" align="left" width="240"/></a>
 
-<a href="#ios" id="ios"><img src="./GIF/ios.gif" width="240"/></a>
-
+<a href="#ios" id="ios"><img src="http://7xjgb0.com1.z0.glb.clouddn.com/ios.gif" width="240"/></a>
 
 ## usage
 
+```shell
+npm install --save react-native-label-select
+```
+
 ```js
-import LabelSelect from 'your-position';
-const {Label, ModalItem} = LabelSelect
+import LabelSelect from 'react-native-label-select';
 ```
 
 ```html
@@ -24,13 +26,13 @@ const {Label, ModalItem} = LabelSelect
   style={yourStyle}
   onConfirm={(list) => {...}}>
 
-  <Label
+  <LableSelect.Label
     key={...}
     data={itemA}
-    onCancel={func}>selected ItemA</Label>
-  <ModalItem
+    onCancel={func}>selected ItemA</LabelSelect.Label>
+  <LabelSelect.ModalItem
     key={...}
-    data={itemB}>Item B</ModalItem>
+    data={itemB}>Item B</LabelSelect.ModalItem>
 </LabelSelect>
 
 ```
@@ -49,9 +51,7 @@ const {Label, ModalItem} = LabelSelect
 | onConfirm | - | function | Triggered when the confirm button of modal is pressed with the newly selected items list passed as the only argument |
 
 
-**Label**
-
-
+**LabelSelect.Label**
 
 
 | Prop | Default | Type | Description |
@@ -59,7 +59,7 @@ const {Label, ModalItem} = LabelSelect
 | onCancel | - | function | Triggered when the close button of Label is pressed. |
 |data| -| any | Data that bind to the Label |
 
-**ModalItem**
+**LabelSelect.ModalItem**
 
 
 
@@ -87,5 +87,3 @@ Use `ref` property as a hook to invoke internal methods.
 this.ref.select.openModal()
 this.ref.select.cancelSelect()
 ```
-
-

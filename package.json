@@ -1,17 +1,37 @@
 {
-	"name": "checkbox",
-	"version": "0.0.1",
-	"private": true,
+	"name": "react-native-label-select",
+	"version": "1.0.0",
+	"description": "A label select component for React Native apps",
+	"keywords": [
+		"label",
+		"select",
+		"react-native",
+		"react"
+	],
+	"main": "LabelSelect/index.js",
+	"author": {
+		"name": "wytiny",
+		"url": "http://wytiny.com"
+	},
+	"maintainers": [
+		{
+			"name": "wytiny",
+			"email": "zjutiny@gmail.com"
+		}
+	],
+	"bugs": {
+		"url": "https://github.com/Tinysymphony/react-native-label-select/issues"
+	},
+	"homepage": "https://github.com/Tinysymphony/react-native-label-select#readme",
+	"license": "MIT",
 	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"start": "react-native start",
+		"ios": "react-native run-ios",
+		"android": "react-native run-android",
 		"test": "jest",
 		"coverage": "cat ./coverage/lcov.info | coveralls"
 	},
-	"dependencies": {
-		"react": "^15.4.2",
-		"react-native": "0.40.0",
-		"sinon": "^1.17.7"
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"babel-jest": "18.0.0",
 		"babel-preset-react-native": "1.9.1",
@@ -19,8 +39,10 @@
 		"enzyme": "^2.7.0",
 		"istanbul": "^0.4.5",
 		"jest": "18.1.0",
+		"react": "^15.4.2",
 		"react-addons-test-utils": "^15.4.2",
 		"react-dom": "^15.4.2",
+		"react-native": "^0.40.0",
 		"react-test-renderer": "^15.4.2"
 	},
 	"jest": {
