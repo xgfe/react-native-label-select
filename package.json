@@ -1,6 +1,6 @@
 {
 	"name": "react-native-label-select",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "A label select component for React Native apps",
 	"keywords": [
 		"label",
@@ -39,6 +39,7 @@
 		"enzyme": "^2.7.0",
 		"istanbul": "^0.4.5",
 		"jest": "18.1.0",
+		"jsdom": "^9.9.1",
 		"react": "^15.4.2",
 		"react-addons-test-utils": "^15.4.2",
 		"react-dom": "^15.4.2",

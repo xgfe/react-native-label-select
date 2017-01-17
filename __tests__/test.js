@@ -85,7 +85,7 @@ it('interact with modal', () => {
     <LabelSelect
       title="Enzyme Test"
       onConfirm={(list) => {arr = list;}}
-      enableAddBtn={false}
+      enableAddBtn={true}
       >
       {selectedItems}
       {otherItems}

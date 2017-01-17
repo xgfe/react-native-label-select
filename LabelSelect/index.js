@@ -105,17 +105,14 @@ class LabelSelect extends Component {
         <Modal
           transparent={true}
           visible={this.state.isModalVisible}
-          onRequestClose={this.cancelSelect}>
+          onRequestClose={() => {}}>
           <View style={{flex: 1}}>
             <TouchableHighlight
               style={Styles.modalMask}
               activeOpacity={1}
-              underlayColor="transparent"
+              underlayColor="#00000077"
               onPress={this.cancelSelect}>
-              <TouchableHighlight
-                activeOpacity={1}
-                underlayColor="transparent"
-                style={Styles.modalContainer}>
+              <View style={Styles.modalContainer}>
                 <View style={Styles.modal}>
                   <View style={Styles.title}><Text style={Styles.titleText}>{title}</Text></View>
                   <View style={Styles.scrollView}>
@@ -138,7 +135,7 @@ class LabelSelect extends Component {
                     </TouchableHighlight>
                   </View>
                 </View>
-              </TouchableHighlight>
+              </View>
             </TouchableHighlight>
           </View>
         </Modal>
