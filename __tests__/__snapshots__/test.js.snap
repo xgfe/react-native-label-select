@@ -312,7 +312,7 @@ exports[`test renders disabled LabelSelect 1`] = `
                       },
                       Object {
                         "borderLeftColor": "#fff",
-                        "borderLeftWidth": 0.5,
+                        "borderLeftWidth": 1,
                       },
                     ],
                   ]
@@ -715,7 +715,7 @@ exports[`test renders enabled LabelSelect 1`] = `
                       },
                       Object {
                         "borderLeftColor": "#fff",
-                        "borderLeftWidth": 0.5,
+                        "borderLeftWidth": 1,
                       },
                     ],
                   ]
@@ -983,7 +983,7 @@ exports[`test renders readOnly LabelSelect 1`] = `
                       },
                       Object {
                         "borderLeftColor": "#fff",
-                        "borderLeftWidth": 0.5,
+                        "borderLeftWidth": 1,
                       },
                     ],
                   ]

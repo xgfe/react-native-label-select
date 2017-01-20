@@ -117,7 +117,7 @@ export default StyleSheet.create({
     fontSize: 16
   },
   confirmButton: {
-    borderLeftWidth: 0.5,
+    borderLeftWidth: 2 / scale,
     borderLeftColor: '#fff'
   },
   outerCircle: {
