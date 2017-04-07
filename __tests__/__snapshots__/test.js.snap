@@ -36,10 +36,13 @@ exports[`test renders a modal item 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      ellipsisMode="tail"
       ellipsizeMode="tail"
+      numberOfLines={1}
       style={
         Object {
           "fontSize": 16,
+          "width": 380,
         }
       }>
       C
@@ -99,12 +102,15 @@ exports[`test renders disabled LabelSelect 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      ellipsisMode="tail"
       ellipsizeMode="tail"
+      numberOfLines={1}
       style={
         Array [
           Object {
             "fontSize": 14,
             "lineHeight": 14,
+            "maxWidth": 300,
             "padding": 6,
           },
           Object {
@@ -137,12 +143,15 @@ exports[`test renders disabled LabelSelect 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      ellipsisMode="tail"
       ellipsizeMode="tail"
+      numberOfLines={1}
       style={
         Array [
           Object {
             "fontSize": 14,
             "lineHeight": 14,
+            "maxWidth": 300,
             "padding": 6,
           },
           Object {
@@ -373,12 +382,15 @@ exports[`test renders enabled LabelSelect 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      ellipsisMode="tail"
       ellipsizeMode="tail"
+      numberOfLines={1}
       style={
         Array [
           Object {
             "fontSize": 14,
             "lineHeight": 14,
+            "maxWidth": 300,
             "padding": 6,
           },
           false,
@@ -449,12 +461,15 @@ exports[`test renders enabled LabelSelect 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      ellipsisMode="tail"
       ellipsizeMode="tail"
+      numberOfLines={1}
       style={
         Array [
           Object {
             "fontSize": 14,
             "lineHeight": 14,
+            "maxWidth": 300,
             "padding": 6,
           },
           false,
@@ -776,12 +791,15 @@ exports[`test renders readOnly LabelSelect 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      ellipsisMode="tail"
       ellipsizeMode="tail"
+      numberOfLines={1}
       style={
         Array [
           Object {
             "fontSize": 14,
             "lineHeight": 14,
+            "maxWidth": 300,
             "padding": 6,
           },
           false,
@@ -810,12 +828,15 @@ exports[`test renders readOnly LabelSelect 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
+      ellipsisMode="tail"
       ellipsizeMode="tail"
+      numberOfLines={1}
       style={
         Array [
           Object {
             "fontSize": 14,
             "lineHeight": 14,
+            "maxWidth": 300,
             "padding": 6,
           },
           false,
